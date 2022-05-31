@@ -1,0 +1,49 @@
+{
+  "version": 2,
+  "dgSpecHash": "VZgk4exZC5xvWOZ86Z0c3IsMrlNiXA4bt/BTSL/gk8IqZcH3f7HxPnoD2I2wb2r6IXPYFDVOUnn5WTRGski2Mw==",
+  "success": false,
+  "projectFilePath": "C:\\Xamarin\\xamarinExercises\\swagOrderingApp\\SqliteAppSln\\SqliteApp\\SqliteApp.iOS\\SqliteApp.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Loventia\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Loventia\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Loventia\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Sqlite.Standard is not compatible with xamarinios10 (Xamarin.iOS,Version=v1.0). Project Sqlite.Standard supports: net5.0 (.NETCoreApp,Version=v5.0)",
+      "libraryId": "Sqlite.Standard",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Sqlite.Standard is not compatible with xamarinios10 (Xamarin.iOS,Version=v1.0) / win. Project Sqlite.Standard supports: net5.0 (.NETCoreApp,Version=v5.0)",
+      "libraryId": "Sqlite.Standard",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0/win"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Sqlite.Standard is not compatible with xamarinios10 (Xamarin.iOS,Version=v1.0) / win-x64. Project Sqlite.Standard supports: net5.0 (.NETCoreApp,Version=v5.0)",
+      "libraryId": "Sqlite.Standard",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0/win-x64"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Sqlite.Standard is not compatible with xamarinios10 (Xamarin.iOS,Version=v1.0) / win-x86. Project Sqlite.Standard supports: net5.0 (.NETCoreApp,Version=v5.0)",
+      "libraryId": "Sqlite.Standard",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
+}

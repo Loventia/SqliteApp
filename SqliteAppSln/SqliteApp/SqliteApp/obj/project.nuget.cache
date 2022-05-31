@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "zZlspWiINWljg/PRTTTN5newSlaZA04LJNuurN3Y/L/JvzuLYQWzsW/T32Ki+WL2M3/EPL++0p2kLaXzGQFYcg==",
+  "success": false,
+  "projectFilePath": "C:\\Xamarin\\xamarinExercises\\swagOrderingApp\\SqliteAppSln\\SqliteApp\\SqliteApp\\SqliteApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Loventia\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Loventia\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Loventia\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Loventia\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Loventia\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Sqlite.Standard is not compatible with netstandard2.0 (.NETStandard,Version=v2.0). Project Sqlite.Standard supports: net5.0 (.NETCoreApp,Version=v5.0)",
+      "libraryId": "Sqlite.Standard",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
+}
