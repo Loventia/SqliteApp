@@ -1,49 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "VZgk4exZC5xvWOZ86Z0c3IsMrlNiXA4bt/BTSL/gk8IqZcH3f7HxPnoD2I2wb2r6IXPYFDVOUnn5WTRGski2Mw==",
-  "success": false,
+  "dgSpecHash": "iwWTV2dm8iqO/JpZ2kp3Tq4HDcqq3qZwPL8lnnY3Z3geKB12ZxJaB670mJBUcnLML7DklXg/9x1PsdLT6aogKg==",
+  "success": true,
   "projectFilePath": "C:\\Xamarin\\xamarinExercises\\swagOrderingApp\\SqliteAppSln\\SqliteApp\\SqliteApp.iOS\\SqliteApp.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Loventia\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
+    "C:\\Users\\Loventia\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
+    "C:\\Users\\Loventia\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
+    "C:\\Users\\Loventia\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.4\\sqlitepclraw.provider.dynamic_cdecl.2.0.4.nupkg.sha512",
+    "C:\\Users\\Loventia\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\Loventia\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Loventia\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Loventia\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\Loventia\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\Loventia\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "Project Sqlite.Standard is not compatible with xamarinios10 (Xamarin.iOS,Version=v1.0). Project Sqlite.Standard supports: net5.0 (.NETCoreApp,Version=v5.0)",
-      "libraryId": "Sqlite.Standard",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0"
-      ]
-    },
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "Project Sqlite.Standard is not compatible with xamarinios10 (Xamarin.iOS,Version=v1.0) / win. Project Sqlite.Standard supports: net5.0 (.NETCoreApp,Version=v5.0)",
-      "libraryId": "Sqlite.Standard",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0/win"
-      ]
-    },
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "Project Sqlite.Standard is not compatible with xamarinios10 (Xamarin.iOS,Version=v1.0) / win-x64. Project Sqlite.Standard supports: net5.0 (.NETCoreApp,Version=v5.0)",
-      "libraryId": "Sqlite.Standard",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0/win-x64"
-      ]
-    },
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "Project Sqlite.Standard is not compatible with xamarinios10 (Xamarin.iOS,Version=v1.0) / win-x86. Project Sqlite.Standard supports: net5.0 (.NETCoreApp,Version=v5.0)",
-      "libraryId": "Sqlite.Standard",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0/win-x86"
-      ]
-    }
-  ]
+  "logs": []
 }

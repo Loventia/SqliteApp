@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
+using Sqlite.Standard;
+using Xamarin.Forms;
+using System.Windows.Input;
+
+
 
 namespace SqliteApp
 {
@@ -23,11 +28,18 @@ namespace SqliteApp
             }
         }
 
-        public double ProductPrice { get; set; }
+        public string Name { get; set; }
+        public string Gender { get; set; }
+        public string Size { get; set; }
+        public string Color { get; set; }
+        public string Date { get; set; }
+        public string Address { get; set; }
 
-        public string ProductTitle { get; set; }
-
-        public ICommand RefreshCommand
+       /* public override string ToString()
+        {
+            return string.Format("({0}) {1}, {2}", Id, Name, Gender, Size, Color, Date, Address);
+        }*/
+        public System.Windows.Input.ICommand RefreshCommand
         {
             get
             {
@@ -46,22 +58,27 @@ namespace SqliteApp
                 {
                     var product = new Product
                     {
-                        Title = ProductTitle,
-                        Price = ProductPrice,
+                        Name = this.Name,
+                        Gender = this.Gender,
+                        Size = this.Size,
+                        Color = this.Color,
+                        Date = this.Date,
+                        Address = this.Address
+
                     };
                     await _productsRepository.AddProductAsync(product);
                 });
             }
         }
 
-        public ProductsViewModel(IProductRepository productsRepository)
+        public ProductsViewModel(Sqlite.Standard.IProductRepository productsRepository)
         {
             _productsRepository = productsRepository;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        protected virtual void OnPropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }

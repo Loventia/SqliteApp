@@ -1,10 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "1SJA6VOT2YdNO/1m4pCIfNWcwWtQ5hZA0lMnPcJS9fwD/DVc+/p5M0tgiOLAQ2Kl/rVL5B12OzeEilySvcYhHw==",
-  "success": false,
+  "dgSpecHash": "8JWk8CSyMg2qO3D+XcFRqcMPj++xslhMM4FCxVjaWpDb9wrJJmLEdp4De2gXTiRu2cs+776UaI85tquzk2ocFA==",
+  "success": true,
   "projectFilePath": "C:\\Xamarin\\xamarinExercises\\swagOrderingApp\\SqliteAppSln\\SqliteApp\\SqliteApp.Android\\SqliteApp.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Loventia\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
+    "C:\\Users\\Loventia\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
+    "C:\\Users\\Loventia\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
+    "C:\\Users\\Loventia\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3.android\\2.0.4\\sqlitepclraw.lib.e_sqlite3.android.2.0.4.nupkg.sha512",
+    "C:\\Users\\Loventia\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.4\\sqlitepclraw.provider.e_sqlite3.2.0.4.nupkg.sha512",
+    "C:\\Users\\Loventia\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\Loventia\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Loventia\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Loventia\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\Loventia\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
     "C:\\Users\\Loventia\\.nuget\\packages\\xamarin.androidx.annotation\\1.2.0.1\\xamarin.androidx.annotation.1.2.0.1.nupkg.sha512",
     "C:\\Users\\Loventia\\.nuget\\packages\\xamarin.androidx.annotation.experimental\\1.1.0.1\\xamarin.androidx.annotation.experimental.1.1.0.1.nupkg.sha512",
@@ -63,15 +71,5 @@
     "C:\\Users\\Loventia\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.2\\xamarin.google.android.material.1.4.0.2.nupkg.sha512",
     "C:\\Users\\Loventia\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "Project Sqlite.Standard is not compatible with monoandroid12.0 (MonoAndroid,Version=v12.0). Project Sqlite.Standard supports: net5.0 (.NETCoreApp,Version=v5.0)",
-      "libraryId": "Sqlite.Standard",
-      "targetGraphs": [
-        "MonoAndroid,Version=v12.0"
-      ]
-    }
-  ]
+  "logs": []
 }

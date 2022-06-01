@@ -6,9 +6,13 @@ namespace SqliteApp
 {
     public partial class App : Application
     {
-        public App(IProductRepository productRepository)
+
+
+        public App()
         {
             InitializeComponent();
+
+            Sqlite.Standard.IProductRepository productRepository = Sqlite.Standard.ProductRepository.Instance;
 
             MainPage = new ProductsPage()
             {

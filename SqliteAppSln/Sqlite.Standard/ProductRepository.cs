@@ -2,38 +2,38 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+
+using SQLite;
 
 namespace Sqlite.Standard
-{
-    internal class ProductRepository: IProductRepository 
+{ 
+
+    public class ProductRepository: IProductRepository 
     {
-        private readonly DatabaseContext _databaseContext;
 
-        public ProductsRepository(string dbPath)
+        private SQLite.SQLiteAsyncConnection _sqlitConnection;
+
+        public static IProductRepository Instance = new ProductRepository();
+
+        public ProductRepository()
         {
-            _databaseContext = new DatabaseContext(dbPath);
+            var sqliteFilename = "ordering.db3";
+
+            var path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+
+            path = path + sqliteFilename;
+
+            _sqlitConnection = new SQLite.SQLiteAsyncConnection(path, SQLite.SQLiteOpenFlags.ReadWrite | SQLiteOpenFlags.Create | SQLiteOpenFlags.SharedCache);
+
         }
 
-        public async Task<IEnumerable<Product>> GetProductsAsync()
-        {
-            try
-            {
-                var products = await _databaseContext.Products.ToListAsync();
 
-                return products;
-            }
-            catch (Exception e)
-            {
-                return null;
-            }
-        }
 
         public async Task<Product> GetProductByIdAsync(int id)
         {
             try
             {
-                var product = await _databaseContext.Products.FindAsync(id);
+                var product  = await _sqlitConnection.Table<Product>().Where(x => x.Id == id).FirstOrDefaultAsync();
 
                 return product;
             }
@@ -47,13 +47,9 @@ namespace Sqlite.Standard
         {
             try
             {
-                var tracking = await _databaseContext.Products.AddAsync(product);
+                var tracking = await _sqlitConnection.InsertAsync(product);
 
-                await _databaseContext.SaveChangesAsync();
-
-                var isAdded = tracking.State == EntityState.Added;
-
-                return isAdded;
+                return true;
             }
             catch (Exception e)
             {
@@ -65,13 +61,10 @@ namespace Sqlite.Standard
         {
             try
             {
-                var tracking = _databaseContext.Update(product);
+                var tracking = await _sqlitConnection.UpdateAsync(product);
 
-                await _databaseContext.SaveChangesAsync();
-
-                var isModified = tracking.State == EntityState.Modified;
-
-                return isModified;
+ 
+                return true;
             }
             catch (Exception e)
             {
@@ -83,15 +76,10 @@ namespace Sqlite.Standard
         {
             try
             {
-                var product = await _databaseContext.Products.FindAsync(id);
+                var product = await _sqlitConnection.DeleteAsync(id);
 
-                var tracking = _databaseContext.Remove(product);
 
-                await _databaseContext.SaveChangesAsync();
-
-                var isDeleted = tracking.State == EntityState.Deleted;
-
-                return isDeleted;
+                return true;
             }
             catch (Exception e)
             {
@@ -99,13 +87,14 @@ namespace Sqlite.Standard
             }
         }
 
-        public async Task<IEnumerable<Product>> QueryProductsAsync(Func<Product, bool> predicate)
+ 
+        public async Task<IEnumerable<Product>> GetProductsAsync()
         {
             try
             {
-                var products = _databaseContext.Products.Where(predicate);
+                var products = await _sqlitConnection.Table <Product>().ToListAsync();
 
-                return products.ToList();
+                return products;
             }
             catch (Exception e)
             {

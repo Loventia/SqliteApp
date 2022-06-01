@@ -1,0 +1,10 @@
+C:\Xamarin\xamarinExercises\swagOrderingApp\SqliteAppSln\Sqlite.Standard\obj\Debug\netstandard2.0\Sqlite.Standard.csproj.AssemblyReference.cache
+C:\Xamarin\xamarinExercises\swagOrderingApp\SqliteAppSln\Sqlite.Standard\obj\Debug\netstandard2.0\Sqlite.Standard.GeneratedMSBuildEditorConfig.editorconfig
+C:\Xamarin\xamarinExercises\swagOrderingApp\SqliteAppSln\Sqlite.Standard\obj\Debug\netstandard2.0\Sqlite.Standard.AssemblyInfoInputs.cache
+C:\Xamarin\xamarinExercises\swagOrderingApp\SqliteAppSln\Sqlite.Standard\obj\Debug\netstandard2.0\Sqlite.Standard.AssemblyInfo.cs
+C:\Xamarin\xamarinExercises\swagOrderingApp\SqliteAppSln\Sqlite.Standard\obj\Debug\netstandard2.0\Sqlite.Standard.csproj.CoreCompileInputs.cache
+C:\Xamarin\xamarinExercises\swagOrderingApp\SqliteAppSln\Sqlite.Standard\bin\Debug\netstandard2.0\Sqlite.Standard.deps.json
+C:\Xamarin\xamarinExercises\swagOrderingApp\SqliteAppSln\Sqlite.Standard\bin\Debug\netstandard2.0\Sqlite.Standard.dll
+C:\Xamarin\xamarinExercises\swagOrderingApp\SqliteAppSln\Sqlite.Standard\bin\Debug\netstandard2.0\Sqlite.Standard.pdb
+C:\Xamarin\xamarinExercises\swagOrderingApp\SqliteAppSln\Sqlite.Standard\obj\Debug\netstandard2.0\Sqlite.Standard.dll
+C:\Xamarin\xamarinExercises\swagOrderingApp\SqliteAppSln\Sqlite.Standard\obj\Debug\netstandard2.0\Sqlite.Standard.pdb

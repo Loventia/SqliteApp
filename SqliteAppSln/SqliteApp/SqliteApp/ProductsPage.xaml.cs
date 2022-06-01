@@ -9,7 +9,7 @@ using Xamarin.Forms.Xaml;
 
 namespace SqliteApp
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
+   // [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ProductsPage : ContentPage
     {
         public ProductsPage()
