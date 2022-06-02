@@ -6,12 +6,12 @@
         <StackLayout Spacing="10"
                  Padding="20">
 
-            <Entry Text="{Binding Name}" />
-            <Entry Text="{Binding Gender}" />
-            <Entry Text="{Binding Size}" />
-            <Entry Text="{Binding Color}" />
-            <Entry Text="{Binding Date}" />
-            <Entry Text="{Binding Address}" />
+            <Entry Text="{Binding Name}"  Placeholder="Name"/>
+            <Entry Text="{Binding Gender}" Placeholder="Gender" />
+            <Entry Text="{Binding Size}" Placeholder="Size"/>
+            <Entry Text="{Binding Color}"  Placeholder="Color"/>
+            <Entry Text="{Binding Date}"  Placeholder="Date"/>
+            <Entry Text="{Binding Address}"  Placeholder="Address"/>
             
             
             

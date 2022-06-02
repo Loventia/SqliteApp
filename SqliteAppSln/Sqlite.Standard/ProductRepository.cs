@@ -15,7 +15,7 @@ namespace Sqlite.Standard
 
         public static IProductRepository Instance = new ProductRepository();
 
-        public ProductRepository()
+        public  ProductRepository()
         {
             var sqliteFilename = "ordering.db3";
 
@@ -25,6 +25,7 @@ namespace Sqlite.Standard
 
             _sqlitConnection = new SQLite.SQLiteAsyncConnection(path, SQLite.SQLiteOpenFlags.ReadWrite | SQLiteOpenFlags.Create | SQLiteOpenFlags.SharedCache);
 
+            _sqlitConnection.CreateTableAsync<Product>().Wait();
         }
 
 
@@ -47,7 +48,7 @@ namespace Sqlite.Standard
         {
             try
             {
-                var tracking = await _sqlitConnection.InsertAsync(product);
+                int tracking = await _sqlitConnection.InsertAsync(product);
 
                 return true;
             }
